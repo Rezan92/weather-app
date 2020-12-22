@@ -1,7 +1,7 @@
 import React from "react";
 
-const CityWeather = ({ city }) => {
-  const { main, name, weather } = city;
+const CityWeather = ({ cityWeatherInfo }) => {
+  const { main, name, weather } = cityWeatherInfo;
   return (
     <div className="city">
       <h3 className="city__name">{name}</h3>
