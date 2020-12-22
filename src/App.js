@@ -1,3 +1,4 @@
+import "./style/App.css";
 import React from "react";
 import CityWeatherContainer from "./components/CityWeatherContainer";
 
