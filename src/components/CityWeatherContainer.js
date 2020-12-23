@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { fetchData } from "./fetchData";
 import CityWeather from "./CityWeather";
 import SearchInput from "./SearchInput";
 
@@ -10,44 +11,15 @@ const CityWeatherContainer = () => {
   const [ifError, setIfError] = useState({});
 
   const city = cityName.trim() !== "" ? cityName : "Amsterdam";
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+
   useEffect(() => {
-    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
-    const fetchData = async () => {
-      try {
-        const response = await fetch(URL);
-        const data = await response.json();
-        if (data.cod >= 400) {
-          const error = new Error();
-          error.data = data;
-          throw error;
-        } else {
-          setIfError({});
-          setCityWeatherInfo(data);
-        }
-      } catch (error) {
-        setIfError(error.data);
-      }
-    };
-    fetchData();
+    fetchData(URL, setCityWeatherInfo, setIfError);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const handleSubmit = async () => {
-    try {
-      const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}`
-      );
-      const data = await response.json();
-      if (data.cod >= 400) {
-        const error = new Error();
-        error.data = data;
-        throw error;
-      } else {
-        setIfError({});
-        setCityWeatherInfo(data);
-      }
-    } catch (error) {
-      setIfError(error.data);
-    }
+  const handleSubmit = () => {
+    fetchData(URL, setCityWeatherInfo, setIfError);
+    setCityName("");
   };
 
   return (
