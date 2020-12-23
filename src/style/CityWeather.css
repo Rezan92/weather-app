@@ -6,8 +6,7 @@
 }
 
 .city__name {
-  margin: 1rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .city__temp-info {
@@ -55,4 +54,5 @@
 
 .city__temp-max-min {
   margin-top: 0.3rem;
+  margin-bottom: 0;
 }
