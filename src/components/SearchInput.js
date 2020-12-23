@@ -1,8 +1,16 @@
 import React from "react";
+import "../style/SearchInput.css";
+import { MdClear } from "react-icons/md";
 
 const SearchInput = ({ cityName, setCityName, handleSubmit }) => {
   return (
     <div className="search-city">
+      {cityName && (
+        <MdClear
+          className="search-clear-icon"
+          onClick={() => setCityName("")}
+        />
+      )}
       <input
         className="search-city_input"
         type="text"

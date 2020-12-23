@@ -1,0 +1,58 @@
+.city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.city__name {
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+.city__temp-info {
+  padding: 1rem;
+}
+
+.city__temp {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.city__temp-icon-container {
+  width: 120px;
+  height: 100px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.city__temp-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+}
+
+.city__condition {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #ffffff;
+}
+
+.city__description {
+  display: inline-block;
+  margin: 0.3rem;
+  border-bottom: 1px solid #ffffff;
+}
+
+.city__temp-max-min {
+  margin-top: 0.3rem;
+}

@@ -11,7 +11,7 @@ const CityWeatherContainer = () => {
   const [ifError, setIfError] = useState({});
 
   const city = cityName.trim() !== "" ? cityName : "Amsterdam";
-  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
 
   useEffect(() => {
     fetchData(URL, setCityWeatherInfo, setIfError);
