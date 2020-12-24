@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchData } from "./fetchData";
+import { fetchData } from "../functions/fetchData";
 import CityWeather from "./CityWeather";
 import SearchInput from "./SearchInput";
 import ForecastContainer from "./ForecastContainer";

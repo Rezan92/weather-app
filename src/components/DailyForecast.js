@@ -13,7 +13,7 @@ const DailyForecast = ({ day }) => {
         <img
           className="forecast-daily__image"
           src={`https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`}
-          alt=""
+          alt={`${weather[0].main}`}
         />
       </div>
       <p className="forecast-daily__max-min">

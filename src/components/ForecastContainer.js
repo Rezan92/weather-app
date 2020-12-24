@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../style/ForecastContainer.css";
-import { fetchData } from "./fetchData";
+import { fetchData } from "../functions/fetchData";
 import HourlyForecast from "./HourlyForecast";
 import DailyForecast from "./DailyForecast";
 
@@ -19,7 +19,6 @@ const ForecastContainer = ({ coord }) => {
 
   return (
     <div className="forecast">
-      {console.log(forecast)}
       {Object.keys(forecast).length > 0 ? (
         <>
           <div className="forecast-hourly__container">

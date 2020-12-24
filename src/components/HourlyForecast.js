@@ -15,7 +15,7 @@ const HourlyForecast = ({ hour }) => {
         <img
           className="forecast-hourly__image image"
           src={`https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`}
-          alt=""
+          alt={`${weather[0].main}`}
         />
       </div>
       <p className="forecast-hourly__temp">{Math.round(temp)}°</p>
