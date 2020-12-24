@@ -11,7 +11,7 @@
   min-width: 300px;
   margin: auto;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 1.6rem;
   color: #ffffff;
   overflow: auto;
 }

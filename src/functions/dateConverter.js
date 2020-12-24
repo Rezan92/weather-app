@@ -1,9 +1,24 @@
 const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 export const dateConverter = (timestamp) => {
   timestamp = timestamp * 1000;
   const date = new Date(timestamp);
-  let day = weekday[date.getDay()];
+  let month = months[date.getMonth()];
   let dayMonth = date.getDate();
+  let day = weekday[date.getDay()];
   let hour = date.getHours();
   let minute = date.getMinutes();
   let time = hour + ":" + minute;
@@ -21,5 +36,5 @@ export const dateConverter = (timestamp) => {
   } else {
     time = hour + ":" + minute + " am";
   }
-  return [time, day, dayMonth];
+  return [time, day, dayMonth, month];
 };

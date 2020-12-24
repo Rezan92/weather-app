@@ -4,21 +4,24 @@ import { dateConverter } from "../functions/dateConverter";
 const HourlyForecast = ({ hour }) => {
   const { dt, weather, temp, feels_like } = hour;
   return (
-    <div className="forecast__hourly">
-      <p className="forecast__time">{dateConverter(dt)[0]}</p>
-      <div className="forecast__day-container">
-        <p className="forecast__day-month">{dateConverter(dt)[2]} / </p>
-        <p className="forecast__day-week">{dateConverter(dt)[1]}</p>
+    <div className="forecast-hourly">
+      <p className="forecast-hourly__time">{dateConverter(dt)[0]}</p>
+      <div className="forecast-hourly__day-container">
+        <p className="forecast-hourly__day">
+          {dateConverter(dt)[2]} / {dateConverter(dt)[1]}
+        </p>
       </div>
-      <div className="forecast__image-container">
+      <div className="forecast-hourly__image-container image-container ">
         <img
-          className="forecast__image"
+          className="forecast-hourly__image image"
           src={`https://openweathermap.org/img/wn/${weather[0].icon}@2x.png`}
           alt=""
         />
       </div>
-      <p className="forecast__temp">{temp.toFixed(0)}°</p>
-      <p className="forecast__temp-feel">Feels like{feels_like.toFixed(0)}°</p>
+      <p className="forecast-hourly__temp">{Math.round(temp)}°</p>
+      <p className="forecast-hourly__temp-feel">
+        Feels like{Math.round(feels_like)}°
+      </p>
     </div>
   );
 };
