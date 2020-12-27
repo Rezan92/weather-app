@@ -2,13 +2,11 @@ import React from "react";
 import "../style/Humidity.css";
 
 const Humidity = ({ main }) => {
-  console.log(main);
   const { humidity, feels_like, pressure } = main;
   const raduis = 50;
   const circumference = raduis * 2 * Math.PI - 64;
-
-  const num = (circumference * humidity) / 100;
-  const a = circumference - num;
+  const arcLength = (circumference * humidity) / 100; // The inner part
+  const strokeDashoffsetValue = circumference - arcLength; //The outer part
 
   return (
     <div className="humidity">
@@ -25,7 +23,7 @@ const Humidity = ({ main }) => {
             ></circle>
             <circle
               className="humidity__progress-ring__circle-inner humidity-circle"
-              strokeDashoffset={`${a}`}
+              strokeDashoffset={`${strokeDashoffsetValue}`}
               cx="55"
               cy="55"
               r={`${raduis}`}
