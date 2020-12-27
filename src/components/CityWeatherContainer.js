@@ -3,6 +3,7 @@ import { fetchData } from "../functions/fetchData";
 import CityWeather from "./CityWeather";
 import SearchInput from "./SearchInput";
 import ForecastContainer from "./ForecastContainer";
+import Humidity from "./Humidity";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -37,6 +38,7 @@ const CityWeatherContainer = () => {
             cityWeatherInfo={cityWeatherInfo}
           />
           <ForecastContainer coord={cityWeatherInfo.coord} />
+          <Humidity main={cityWeatherInfo.main} />
         </>
       ) : null}
     </div>

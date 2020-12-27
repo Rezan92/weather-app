@@ -1,0 +1,81 @@
+.humidity {
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1px solid #474747;
+}
+
+.humidity__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.humidity__title {
+  text-align: left;
+  margin: 0.8rem 0;
+}
+
+.humidity__progress {
+  position: relative;
+}
+
+.humidity__progress-title {
+  margin: 0.1rem;
+}
+
+.humidity__progress-ring {
+  transform: rotate(127deg);
+  border-radius: 50%;
+  position: relative;
+  transition: 1s all linear;
+}
+
+.humidity-circle {
+  stroke-dasharray: 250 314;
+  fill: transparent;
+  stroke-linecap: round;
+}
+
+.humidity__progress-ring__circle-outer {
+  stroke-width: 8;
+  stroke: #6666668a;
+}
+
+.humidity__progress-start {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  font-size: 0.8rem;
+}
+
+.humidity__progress-end {
+  position: absolute;
+  top: 90%;
+  right: 20%;
+  font-size: 0.8rem;
+}
+
+.humidity__data {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.5rem;
+}
+
+.humidity__progress-ring__circle-inner {
+  stroke-width: 7;
+  stroke: #ffffff;
+  transition: 1s all linear;
+}
+
+.humidity__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.humidity__info-feels-like,
+.humidity__info-pressure {
+  margin: 0.3rem;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import { dateConverter } from "../functions/dateConverter";
 
 const DailyForecast = ({ day }) => {
-  console.log(day);
   const { dt, weather, temp } = day;
   return (
     <div className="forecast-daily">
