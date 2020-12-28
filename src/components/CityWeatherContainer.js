@@ -17,7 +17,20 @@ const CityWeatherContainer = () => {
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
 
   useEffect(() => {
-    fetchData(URL, setCityWeatherInfo, setIfError);
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          const coordinatesURL = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${API_KEY}`;
+          fetchData(coordinatesURL, setCityWeatherInfo, setIfError);
+        },
+        (err) => {
+          fetchData(URL, setCityWeatherInfo, setIfError);
+        }
+      );
+    } else {
+      fetchData(URL, setCityWeatherInfo, setIfError);
+    }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSubmit = () => {
