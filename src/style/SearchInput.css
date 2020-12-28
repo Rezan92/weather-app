@@ -27,7 +27,7 @@
 
 .search-clear-icon {
   position: absolute;
-  right: 28%;
+  right: calc(80px + 15%);
   top: 14px;
   cursor: pointer;
   font-size: 1.5rem;
@@ -41,4 +41,32 @@
   background: #505855;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1125px) {
+  .search-clear-icon {
+    position: absolute;
+    right: calc(80px + 14%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .search-clear-icon {
+    position: absolute;
+    right: calc(80px + 13%);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .search-clear-icon {
+    position: absolute;
+    right: calc(80px + 11%);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search-clear-icon {
+    position: absolute;
+    right: calc(80px + 10%);
+  }
 }

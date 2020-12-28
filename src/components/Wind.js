@@ -30,6 +30,7 @@ const Wind = ({ wind }) => {
           <p>Speed {speed}km/h</p>
         </div>
       </div>
+      <hr className="wind__line" />
     </div>
   );
 };

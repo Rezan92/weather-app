@@ -2,7 +2,6 @@
   padding: 0.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #474747;
-  margin-bottom: 1rem;
 }
 
 .wind__title {
@@ -62,4 +61,8 @@
 
 .wind__container-info {
   font-size: 1.1rem;
+}
+
+.wind__line {
+  border: 1px solid #474747;
 }
