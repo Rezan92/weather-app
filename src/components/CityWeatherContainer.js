@@ -4,6 +4,7 @@ import CityWeather from "./CityWeather";
 import SearchInput from "./SearchInput";
 import ForecastContainer from "./ForecastContainer";
 import Humidity from "./Humidity";
+import Wind from "./Wind";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -39,6 +40,7 @@ const CityWeatherContainer = () => {
           />
           <ForecastContainer coord={cityWeatherInfo.coord} />
           <Humidity main={cityWeatherInfo.main} />
+          <Wind wind={cityWeatherInfo.wind} />
         </>
       ) : null}
     </div>

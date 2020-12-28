@@ -1,0 +1,65 @@
+.wind {
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #474747;
+  margin-bottom: 1rem;
+}
+
+.wind__title {
+  text-align: left;
+  margin: 0.8rem;
+}
+
+.wind__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wind__icon-container {
+  text-align: left;
+  position: relative;
+}
+
+.wind__blade-icon-container {
+  transform-origin: center 41.1px;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes example {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wind__icon-container-small {
+  transform-origin: center 29px;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 47px;
+}
+
+.wind__icon-container-big {
+  width: 70px;
+  height: 70px;
+  top: -25px;
+  left: -1px;
+}
+
+.wind__blade-icon-small,
+.wind__blade-icon-big {
+  width: 100%;
+  filter: invert(100%);
+}
+
+.wind__container-info {
+  font-size: 1.1rem;
+}
