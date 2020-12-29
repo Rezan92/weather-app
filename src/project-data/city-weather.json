@@ -14,7 +14,8 @@
     ],
     "base": "stations",
     "main": {
-      "temp": 280.09,
+      "temp": 6,
+      "feels_like": 2,
       "pressure": 1005,
       "humidity": 87,
       "temp_min": 278.71,
@@ -41,5 +42,302 @@
     "id": 2759794,
     "name": "Amsterdam",
     "cod": 200
+  },
+  {
+    "daily":[
+      {
+        "dt": 1609239600,
+        "temp": {
+          "min":2.68,
+          "max":4.92
+        },
+        "weather":[
+          {
+          "icon": "10d",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609326000,
+        "temp": {
+          "min":3.42,
+          "max":7.09
+        },
+        "weather":[
+          {
+          "icon": "10d",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609412400,
+        "temp": {
+          "min":2.08,
+          "max":3.75
+        },
+        "weather":[
+          {
+          "icon": "10d",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609498800,
+        "temp": {
+          "min":1.2,
+          "max":4.15
+        },
+        "weather":[
+          {
+          "icon": "10d",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609585200,
+        "temp": {
+          "min":0.25,
+          "max":3.34
+        },
+        "weather":[
+          {
+          "icon": "02d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609671600,
+        "temp": {
+          "min":-0.34,
+          "max":2.63
+        },
+        "weather":[
+          {
+          "icon": "01d",
+          "main": "Clear"
+          }
+        ]
+      },
+      {
+        "dt": 1609758000,
+        "temp": {
+          "min":-0.8,
+          "max":2.63
+        },
+        "weather":[
+          {
+          "icon": "04d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609844400,
+        "temp": {
+          "min":-1.27,
+          "max":-1.99
+        },
+        "weather":[
+          {
+          "icon": "10d",
+          "main": "Rain"
+          }
+        ]
+      }
+    ],
+    "hourly":[
+      {
+        "dt": 1609228800,
+        "feels_like": 0.1,
+        "temp": 2.82,
+        "weather":[
+          {
+          "icon": "02d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609232400,
+        "feels_like": 0.11,
+        "temp": 2.94,
+        "weather":[
+          {
+          "icon": "10d",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609236000,
+        "feels_like": 0.41,
+        "temp": 3.32,
+        "weather":[
+          {
+          "icon": "10d",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609239600,
+        "feels_like": 0.86,
+        "temp": 3.77,
+        "weather":[
+          {
+          "icon": "04d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609243200,
+        "feels_like": 1.37,
+        "temp": 4.37,
+        "weather":[
+          {
+          "icon": "04d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609246800,
+        "feels_like": 1.28,
+        "temp": 4.85,
+        "weather":[
+          {
+          "icon": "04d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609250400,
+        "feels_like": 0.79,
+        "temp": 4.92,
+        "weather":[
+          {
+          "icon": "04d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609254000,
+        "feels_like": 0.51,
+        "temp": 4.74,
+        "weather":[
+          {
+          "icon": "04d",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609257600,
+        "feels_like": 0.64,
+        "temp": 4.3,
+        "weather":[
+          {
+          "icon": "04n",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609261200,
+        "feels_like": 0.81,
+        "temp": 4.17,
+        "weather":[
+          {
+          "icon": "04n",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609264800,
+        "feels_like": 0.64,
+        "temp": 3.92,
+        "weather":[
+          {
+          "icon": "10n",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609268400,
+        "feels_like": 0.83,
+        "temp": 4.23,
+        "weather":[
+          {
+          "icon": "10n",
+          "main": "Rain"
+          }
+        ]
+      },
+      {
+        "dt": 1609272000,
+        "feels_like": 0.42,
+        "temp": 4.3,
+        "weather":[
+          {
+          "icon": "04n",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609275600,
+        "feels_like": 0.35,
+        "temp": 4.42,
+        "weather":[
+          {
+          "icon": "04n",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609279200,
+        "feels_like": 0.15,
+        "temp": 4.31,
+        "weather":[
+          {
+          "icon": "04n",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609282800,
+        "feels_like": 0.04,
+        "temp": 4.26,
+        "weather":[
+          {
+          "icon": "04n",
+          "main": "Clouds"
+          }
+        ]
+      },
+      {
+        "dt": 1609286400,
+        "feels_like":-0.04,
+        "temp": 4.32,
+        "weather":[
+          {
+          "icon": "04n",
+          "main": "Clouds"
+          }
+        ]
+      }
+    ]
   }
 ]

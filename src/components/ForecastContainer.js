@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../style/ForecastContainer.css";
-import { fetchData } from "../functions/fetchData";
+import { fetchDataForecast } from "../functions/fetchData";
 import HourlyForecast from "./HourlyForecast";
 import DailyForecast from "./DailyForecast";
 
@@ -8,13 +8,12 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 const ForecastContainer = ({ coord }) => {
   const [forecast, setForecast] = useState({});
-  const [ifError, setIfError] = useState({});
 
   const { lon, lat } = coord;
   const URL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely&appid=${API_KEY}`;
 
   useEffect(() => {
-    fetchData(URL, setForecast, setIfError);
+    fetchDataForecast(URL, setForecast);
   }, [coord]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (

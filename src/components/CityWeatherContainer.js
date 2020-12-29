@@ -5,6 +5,7 @@ import SearchInput from "./SearchInput";
 import ForecastContainer from "./ForecastContainer";
 import Humidity from "./Humidity";
 import Wind from "./Wind";
+import Error from "./Error";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -36,12 +37,14 @@ const CityWeatherContainer = () => {
   const handleSubmit = () => {
     fetchData(URL, setCityWeatherInfo, setIfError);
     setCityName("");
+    setIfError({});
   };
 
   return (
     <div className="city-weather-container">
       {Object.keys(cityWeatherInfo).length > 0 ? (
         <>
+          {Object.keys(ifError).length > 0 && <Error error={ifError} />}
           <SearchInput
             cityName={cityName}
             setCityName={setCityName}
