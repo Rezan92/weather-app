@@ -42,14 +42,13 @@
   font-weight: 700;
   margin: 1rem;
   margin-bottom: 0;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid #a70000;
+  border-bottom: 2px solid #a70000;
 }
 
 .city__description {
   display: inline-block;
   margin: 0.3rem;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #a70000;
 }
 
 .city__temp-max-min {

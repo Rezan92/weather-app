@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../style/CityWeatherContainer.css";
 import { fetchData } from "../functions/fetchData";
 import CityWeather from "./CityWeather";
 import SearchInput from "./SearchInput";
@@ -6,6 +7,7 @@ import ForecastContainer from "./ForecastContainer";
 import Humidity from "./Humidity";
 import Wind from "./Wind";
 import Error from "./Error";
+import BackgroundImage from "./BackgroundImage";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -45,6 +47,7 @@ const CityWeatherContainer = () => {
       {Object.keys(cityWeatherInfo).length > 0 ? (
         <>
           {Object.keys(ifError).length > 0 && <Error error={ifError} />}
+          <BackgroundImage icon={cityWeatherInfo.weather[0].icon} />
           <SearchInput
             cityName={cityName}
             setCityName={setCityName}

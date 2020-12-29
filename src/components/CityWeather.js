@@ -20,6 +20,7 @@ const CityWeather = ({ cityWeatherInfo }) => {
           />
         </div>
         <p className="city__condition">{weather[0].main}</p>
+        <p className="city__description">{weather[0].description}</p>
         <p className="city__temp-max-min">
           {Math.round(main.temp_max)}° / {Math.round(main.temp_min)}° Feels like{" "}
           {Math.round(main.feels_like)}°
