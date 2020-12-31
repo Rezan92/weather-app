@@ -6,6 +6,21 @@
 
 Weather app created using ReactJs, fetch data from OpenWeather API, and renders weather data for cities using the geolocation or searched cities using the search form.
 This app use the geo
+## Components Map
+
+```bash
+App.js
+└───── CityWeatherContainer.js
+             ├── Error.js
+             ├── BackgroundImage.js
+             ├── SearchInput.js
+             ├── CityWeather.js
+             ├── ForecastContainer.js
+             │        ├── HourlyForecast.js
+             │        └── DailyForecast.js
+             ├── Humidity.js
+             └── Wind.js
+```
 
 ## Install
 
@@ -26,4 +41,4 @@ npm install
 👤 **Rezan Al Ibrahim**
 
 - Github: [@Rezan](https://github.com/rezan92)
-- Linkedin: [@Rezan](www.linkedin.com/in/rezan-alibrahim)
+- Linkedin: [@Rezan](https://www.linkedin.com/in/rezan-alibrahim)
