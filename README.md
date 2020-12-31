@@ -26,4 +26,4 @@ npm install
 👤 **Rezan Al Ibrahim**
 
 - Github: [@Rezan](https://github.com/rezan92)
-- Linkedin: [@Rezan](www.linkedin.com/in/rezan-alibrahim)
+- Linkedin: [@Rezan](https://www.linkedin.com/in/rezan-alibrahim)
