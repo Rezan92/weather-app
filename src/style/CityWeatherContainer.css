@@ -1,8 +1,4 @@
 .city-weather-container {
-  /* background-image: url("https://cdn.pixabay.com/photo/2016/01/08/05/24/sunflower-1127174_960_720.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover; */
   position: relative;
   z-index: 1;
 }

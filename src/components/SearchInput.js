@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/SearchInput.css";
 import { MdClear } from "react-icons/md";
+import SuggestedCities from "./SuggestedCities";
 
 const SearchInput = ({ cityName, setCityName, handleSubmit }) => {
   return (
@@ -26,6 +27,7 @@ const SearchInput = ({ cityName, setCityName, handleSubmit }) => {
       >
         Search
       </button>
+      <SuggestedCities cityName={cityName} setCityName={setCityName} />
     </div>
   );
 };
